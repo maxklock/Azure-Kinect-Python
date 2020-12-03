@@ -5,7 +5,7 @@ import sys
 from .pyk4a import k4a_float3_t, k4a_calibration_t, k4a_capture_t, k4a_image_t
 
 try:
-    _k4abt = ctypes.CDLL(r'C:\Program Files\Azure Kinect Body Tracking SDK\sdk\windows-desktop\amd64\release\bin\k4abt.dll')
+    _k4abt = ctypes.CDLL(r'k4abt.dll')
 except Exception as e:
     try:
         _k4abt = ctypes.CDLL('k4abt.so')
