@@ -3,7 +3,7 @@ import enum
 import sys
 
 try:
-    _k4a = ctypes.CDLL(r'C:\Program Files\Azure Kinect SDK v1.3.0\sdk\windows-desktop\amd64\release\bin\k4a.dll')
+    _k4a = ctypes.CDLL(r'k4a.dll')
 except Exception as e:
     try:
         _k4a = ctypes.CDLL('k4a.so')
